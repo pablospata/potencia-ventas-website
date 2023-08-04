@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00294B;
+    color: 333;
+    padding: .25rem 2rem;
+}
+
+.logo img {
+    max-height: 60px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*
+.menu li {
+    margin: 0;
+    padding: 0;
+    display: flex; 
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    flex-grow: 1; 
+    text-align: center;
+}
+
+.menu a:hover {
+    background-color: #023a68;
+}
+
+*/
+
+.menu li {
+    /* margin: 0 1.5vw; */
+    /* margin: 0 0; */
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 60px 2vw;    
+}
+
+
+.menu a:hover {
+    background-color: #023a68;
+}
+
+nav .cta {
+    background-color: #00be00;
+    border-radius: 3px;
+    padding: 8px 16px;
+    font-weight: 700;
+}
+
+nav .cta:hover {
+    background-color: #10af10;
+}
+
+nav .cta a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.fa-whatsapp{
+    font-size: 20px;
+    font-weight: 600; /* Hace que el icono sea más grueso */
+}
+
+.toggle-menu {
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+}
+
+.image-layer {
+    position: relative;
+    width: 100%;
+    min-height: 90vh;
+    background: url(./assets/imgs/businessman.jpg) no-repeat center center/cover;
+    /* background-size: contain; */
+    overflow: hidden;
+}
+
+.text-layer {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 50%;
+    /* Ocupa la mitad izquierda */
+    height: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12vw 9vw;
+    gap: 1vw;
+}
+
+.blue-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 36, 66, 0.6);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.hero .text-layer h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.hero .text-layer h5 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.hero .text-layer p {
+    font-size: 1.5rem;    
+}
+
+main button {
+    background-color: rgb(5, 117, 188);
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 15px 45px;
+    border: none;
+    transition: background-color 0.3s ease; 
+}
+
+main button:hover {
+    background-color: #023a68;
+}
+
+
+main button:active {
+    background-color: #022f53;
+}
+
+main img {    
+    border-radius: .5rem;
+  
+}
+
+.wrapper{
+    padding: 12vw 9vw; 
+    display: flex;
+    flex-direction: column;       
+    gap: 15rem; 
+    padding-bottom: 12vw;
+}
+
+.blanca {
+    
+    background-color: white;
+    color: #7a838b;
+    display: flex;        
+    gap: 5rem;
+    align-items: center;    
+}
+
+.container-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;        
+}
+
+.container-img {
+    flex: 1;
+}
+
+.container-img img {
+    width: 100%;
+    height: auto;
+}
+
+.blanca h2 {    
+    color: rgb(0, 41, 75);
+    font-weight: 500;
+    font-size: 5rem;
+}
+
+.blanca h3 {    
+    color: rgb(0, 41, 75);
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.blanca h5 {           
+    font-size: 2rem; 
+    text-transform: uppercase;
+}
+
+
+.blanca p {           
+    font-size: 1.5rem; 
+    margin-top: 1rem;    
+}
+
+main button {           
+    margin-top: 2rem;
+    width: max-content;
+}
+
+.invertida {
+    flex-direction: row-reverse;
+}
+
+.azul {
+    background-color: #52738E;    
+    color: white;
+    display: flex;        
+    gap: 5rem;      
+    height: 500px;
+    padding: 12vw 9vw; 
+}
+
+
+.azul h2 {    
+    color: white;
+    font-weight: 500;
+    font-size: 5rem;
+}
+
+.azul h3 {    
+    color: rgb(0, 41, 75);
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.azul h5 {           
+    color: #001628;
+    font-size: 2rem; 
+    text-transform: uppercase;
+}
+
+
+.azul p {           
+    font-size: 1.5rem; 
+    margin-top: 1rem;    
+}
+
+
+.container-text ul {
+    list-style-type: disc; /* Viñetas de estilo disco */
+}
+
+.container-text ul li {
+    margin-top: 1rem;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .menu {
+        z-index: 100;
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #00294B;
+        padding: 1rem;
+    }
+
+    .menu a {
+        padding: 6px 10vw;
+    }
+
+
+    .logo img {
+        max-width: 70px;
+    }
+
+    .menu.active {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+    }
+
+    .toggle-menu {
+        display: block;
+    }
+
+    .navbar .cta {
+        display: none;
+    }
+
+
+    .hero .text-layer h1 {
+        font-size: 3rem;
+    }
+
+    .hero .text-layer h5 {
+        font-size: 1.5rem;
+    }
+
+    .hero .text-layer p {
+        font-size: 1.25rem;
+    }
+
+}
+

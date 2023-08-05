@@ -55,11 +55,6 @@ a {
 
 */
 
-.menu li {
-    /* margin: 0 1.5vw; */
-    /* margin: 0 0; */
-}
-
 .menu a {
     color: white;
     text-decoration: none;
@@ -243,6 +238,23 @@ main button {
     flex-direction: row-reverse;
 }
 
+.cta-azul {
+    background-color: #52738E;            
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.cta-azul p {    
+    width: 80%;
+    padding: 30px;
+    border: 1px solid white;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+
 .azul {
     background-color: #52738E;    
     color: white;
@@ -250,6 +262,8 @@ main button {
     gap: 5rem;      
     height: 500px;
     padding: 12vw 9vw; 
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -274,7 +288,7 @@ main button {
 
 .azul p {           
     font-size: 1.5rem; 
-    margin-top: 1rem;    
+    margin-top: 1rem;        
 }
 
 

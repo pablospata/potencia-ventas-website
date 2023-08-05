@@ -14,12 +14,17 @@ a {
 }
 
 .navbar {
+    position: fixed;
+    width: 96%;
+    z-index: 111;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #00294B;
     color: 333;
     padding: .25rem 2rem;
+    box-shadow: rgb(0 0 0 / 25%) 0px 8px 23px -17px;
+    overflow: hidden;
 }
 
 .logo img {
@@ -58,7 +63,7 @@ a {
 .menu a {
     color: white;
     text-decoration: none;
-    padding: 60px 2vw;    
+    padding: 60px 2vw;
 }
 
 
@@ -84,9 +89,10 @@ nav .cta a {
     gap: 10px;
 }
 
-.fa-whatsapp{
+.fa-whatsapp {
     font-size: 20px;
-    font-weight: 600; /* Hace que el icono sea más grueso */
+    font-weight: 600;
+    /* Hace que el icono sea más grueso */
 }
 
 .toggle-menu {
@@ -97,13 +103,23 @@ nav .cta a {
     font-size: 24px;
 }
 
+.hero {
+    padding-top: 72px;    
+}
+
+.hero h5{
+    color: white;
+}
+
 .image-layer {
     position: relative;
     width: 100%;
-    min-height: 90vh;
+    min-height: 80vh;
     background: url(./assets/imgs/businessman.jpg) no-repeat center center/cover;
     /* background-size: contain; */
     overflow: hidden;
+    padding-top: 15rem;
+    /* padding-bottom: 20rem; */
 }
 
 .text-layer {
@@ -146,7 +162,7 @@ nav .cta a {
 }
 
 .hero .text-layer p {
-    font-size: 1.5rem;    
+    font-size: 1.5rem;
 }
 
 main button {
@@ -157,7 +173,7 @@ main button {
     font-weight: 600;
     padding: 15px 45px;
     border: none;
-    transition: background-color 0.3s ease; 
+    transition: background-color 0.3s ease;
 }
 
 main button:hover {
@@ -169,32 +185,31 @@ main button:active {
     background-color: #022f53;
 }
 
-main img {    
+main img {
     border-radius: .5rem;
-  
+
 }
 
-.wrapper{
-    padding: 12vw 9vw; 
+.wrapper {
+    padding: 12vw 9vw;
     display: flex;
-    flex-direction: column;       
-    gap: 15rem; 
+    flex-direction: column;
+    gap: 15rem;
     padding-bottom: 12vw;
 }
 
 .blanca {
-    
     background-color: white;
     color: #7a838b;
-    display: flex;        
+    display: flex;
     gap: 5rem;
-    align-items: center;    
+    align-items: center;
 }
 
 .container-text {
     flex: 1;
     display: flex;
-    flex-direction: column;        
+    flex-direction: column;
 }
 
 .container-img {
@@ -206,30 +221,30 @@ main img {
     height: auto;
 }
 
-.blanca h2 {    
+h2 {
     color: rgb(0, 41, 75);
     font-weight: 500;
     font-size: 5rem;
 }
 
-.blanca h3 {    
+h3 {
     color: rgb(0, 41, 75);
     font-weight: 500;
     font-size: 2rem;
 }
 
-.blanca h5 {           
-    font-size: 2rem; 
+h5 {
+    color: #7a838b;
+    font-size: 2rem;
     text-transform: uppercase;
 }
 
-
-.blanca p {           
-    font-size: 1.5rem; 
-    margin-top: 1rem;    
+.blanca p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
 }
 
-main button {           
+main button {
     margin-top: 2rem;
     width: max-content;
 }
@@ -239,14 +254,14 @@ main button {
 }
 
 .cta-azul {
-    background-color: #52738E;            
+    background-color: #52738E;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 40px;
 }
 
-.cta-azul p {    
+.cta-azul p {
     width: 80%;
     padding: 30px;
     border: 1px solid white;
@@ -256,49 +271,128 @@ main button {
 }
 
 .azul {
-    background-color: #52738E;    
+    background-color: #52738E;
     color: white;
-    display: flex;        
-    gap: 5rem;      
+    display: flex;
+    gap: 5rem;
     height: 500px;
-    padding: 12vw 9vw; 
+    padding: 12vw 9vw;
     justify-content: center;
     align-items: center;
 }
 
 
-.azul h2 {    
+.azul h2 {
     color: white;
     font-weight: 500;
     font-size: 5rem;
 }
 
-.azul h3 {    
+.azul h3 {
     color: rgb(0, 41, 75);
     font-weight: 500;
     font-size: 2rem;
 }
 
-.azul h5 {           
+.azul h5 {
     color: #001628;
-    font-size: 2rem; 
+    font-size: 2rem;
     text-transform: uppercase;
 }
 
 
-.azul p {           
-    font-size: 1.5rem; 
-    margin-top: 1rem;        
+.azul p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
 }
 
 
 .container-text ul {
-    list-style-type: disc; /* Viñetas de estilo disco */
+    list-style-type: disc;
+    /* Viñetas de estilo disco */
 }
 
 .container-text ul li {
     margin-top: 1rem;
 }
+
+/* Cards */
+.testimonial-cards {
+    padding: 8vw 9vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+
+.fa-star {
+    color: #EFC319;
+}
+
+
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+}
+
+.card {
+    flex: 1 0 18rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 20rem;
+    padding: 20px;
+    margin: 15px;
+    box-shadow: rgb(0 0 0 / 24%) 0px 8px 35px -14px;
+}
+
+.card .card-stars {
+    margin: 0 0 1.5rem;
+    padding: 1px;
+}
+
+.card p {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    color: #6a6b6c;    
+}
+
+.card-person {
+    display: flex;
+    align-items: center;
+    margin-top: .5rem;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.card-name p {
+    font-family: 'Inter', sans-serif;
+    color: #204147;
+    font-weight: 700;
+    font-size: 15px;
+    margin-top: 0;
+}
+
+.card-photo img {
+    width: 34px;        
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -352,4 +446,3 @@ main button {
     }
 
 }
-

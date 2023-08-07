@@ -5,7 +5,7 @@
 
 body {
     font-family: 'Barlow Condensed', sans-serif;
-    font-size: 20px;
+    font-size: 20px;    
 }
 
 a {
@@ -64,6 +64,9 @@ a {
     color: white;
     text-decoration: none;
     padding: 60px 2vw;
+    /* font-size: 1.5rem; */
+    font-size: 22px;
+    
 }
 
 
@@ -150,7 +153,7 @@ nav .cta a {
 }
 
 .hero .text-layer h1 {
-    font-size: 4rem;
+    font-size: 4.5rem;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -162,7 +165,7 @@ nav .cta a {
 }
 
 .hero .text-layer p {
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 main button {
@@ -259,6 +262,10 @@ main button {
     justify-content: center;
     align-items: center;
     padding: 40px;
+}
+
+.cta-azul--claro {
+     background-color: rgb(5, 117, 188); 
 }
 
 .cta-azul p {
@@ -384,19 +391,19 @@ main button {
 /* Pricing */
 
 .pricing {
-    /* background-color: #f7f7f7; */
+    background-color: #f7f7f7; 
     
     /* font-size: 15px; */
     font-size: 1.5rem;
     margin-top: 1rem;
     color: #7a838b;
 
-    /* font-weight: 700; */
-    height: 120vh;
+    /* font-weight: 700; */    
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 8vw 0 12vw 0; /*9vw;*/
 }
 
 .pricing .cards {
@@ -404,19 +411,18 @@ main button {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    padding-top: 3rem;
 }
 
 .pricing .card {
     background-color: #fff;
     color: hsl(233, 13%, 49%);
-    border-radius: 0.8rem;
+    color: #7a838b;    
 }
 
 .pricing .cards .card.active {
-    background:
-        linear-gradient(135deg,
-            rgb(163, 168, 249, 1) 0%,
-            rgb(105, 111, 221, 1) 100%);
+    background-color: #023a68;
+
     color: #fff;
     display: flex;
     justify-content: start;
@@ -441,8 +447,9 @@ main button {
 }
 
 .pricing ul li.price {
-    font-size: 3rem;    
+    font-size: 4rem;    
     padding-bottom: 2rem;
+    font-weight: 700;
 }
 
 .pricing .shadow {
@@ -450,34 +457,29 @@ main button {
 }
 
 .pricing .btn {
+    background-color: #023a68;
     margin-top: 1rem;
     height: 2.6rem;    
     width: 13.3rem;
-    background:  linear-gradient(135deg,
-    rgb(163, 168, 249, 1) 0%,
-    rgb(105, 111, 221, 1) 100%);
     border: 0;
     font-weight: 700;
-    color: #fff;
-    border-radius: 4px;
+    color: #fff;   
+    display: flex;
+    align-items: center;
+    justify-content: center; 
 }
 
 .pricing .btn:hover {
-    background: linear-gradient(135deg,
-    rgb(143, 148, 229, 1) 0%,
-    rgb(85, 91, 201, 1) 100%);
+   background-color: #00294B;
 }
 
 .pricing .btn:active {
-    background: linear-gradient(135deg,
-    rgb(123, 128, 209, 1) 0%,
-    rgb(65, 71, 181, 1) 100%);
-    transform: translateY(2px);
+    transform: translateY(1px);
 }
 
 .pricing .active-btn {
     background:  #fff;    
-    color: hsl(237, 63%, 64%);
+    color: #023a68;
 }
 
 .pricing .btn.active-btn:hover {
@@ -487,9 +489,8 @@ main button {
 }
 
 .pricing .active-btn:active {
-    background: hsl(237, 63%, 84%);
-    color: hsl(237, 63%, 44%);
-    transform: translateY(2px);
+    background: hsl(237, 63%, 84%);    
+    transform: translateY(1px);
 }
 
 .pricing .bottom-bar {
@@ -498,7 +499,54 @@ main button {
 
 
 
+.why {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8vw 9vw;
+}
 
+.why-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 1rem;
+    padding-top: 3rem;
+}
+
+.why-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: .5rem;
+    text-align: center;    
+    background-color: #00294B;    
+    color: white;
+    padding: 1.25rem;    
+    /* transition: background-color 0.3s ease;  Transiciones suaves para los efectos     */
+}
+
+.why-card:hover {
+    background-color: #004475;
+
+}
+
+.why-card i {
+    font-size: 2em;    
+    margin: 1rem;    
+}
+
+.why-card h6 {
+    font-size: 2rem;
+    border-bottom: 2px solid rgb(5, 117, 188);
+    padding-bottom: 1rem;
+    margin-bottom: .5rem;
+    /* #52738E;*/
+    width: 100%;
+
+}
 
 
 

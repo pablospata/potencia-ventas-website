@@ -631,18 +631,24 @@ button {
 footer {
     display: flex;
     flex-direction: column;
+    background-color: #001628;
+    color: white;
 }
 
 .footer-content {
     display: flex;
-    background-color: #001628;
-    width: 100%;
+    /* flex-direction: column; */
+    
+    
 }
 
 .mail, .telefono, .direccion {
-    display: flex;
+    flex: 1;
+    display: block;
     flex-direction: row;
     align-items: center; /* Centra los elementos hijos verticalmente */
+        
+
 }
 
 .fas, .fab {

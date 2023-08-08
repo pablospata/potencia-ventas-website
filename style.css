@@ -5,7 +5,7 @@
 
 body {
     font-family: 'Barlow Condensed', sans-serif;
-    font-size: 20px;    
+    font-size: 20px;
 }
 
 a {
@@ -66,7 +66,7 @@ a {
     padding: 60px 2vw;
     /* font-size: 1.5rem; */
     font-size: 22px;
-    
+
 }
 
 
@@ -107,10 +107,10 @@ nav .cta a {
 }
 
 .hero {
-    padding-top: 72px;    
+    padding-top: 72px;
 }
 
-.hero h5{
+.hero h5 {
     color: white;
 }
 
@@ -265,7 +265,7 @@ main button {
 }
 
 .cta-azul--claro {
-     background-color: rgb(5, 117, 188); 
+    background-color: rgb(5, 117, 188);
 }
 
 .cta-azul p {
@@ -329,7 +329,7 @@ main button {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
 }
 
 
@@ -363,7 +363,7 @@ main button {
 .card p {
     font-family: 'Inter', sans-serif;
     font-size: 15px;
-    color: #6a6b6c;    
+    color: #6a6b6c;
 }
 
 .card-person {
@@ -383,7 +383,7 @@ main button {
 }
 
 .card-photo img {
-    width: 34px;        
+    width: 34px;
 }
 
 
@@ -391,33 +391,44 @@ main button {
 /* Pricing */
 
 .pricing {
-    background-color: #f7f7f7; 
-    
+    background-color: #f7f7f7;
+
     /* font-size: 15px; */
     font-size: 1.5rem;
     margin-top: 1rem;
     color: #7a838b;
 
-    /* font-weight: 700; */    
+    /* font-weight: 700; */
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 8vw 0 12vw 0; /*9vw;*/
+    padding: 8vw 0 8vw 0;    
+}
+
+
+.pricing p {
+    padding-top: 4rem;
+    /* margin-top: 5rem; */
+    font-size: 1rem;
+}
+
+.pricing span {
+    font-size: 1rem;
 }
 
 .pricing .cards {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     flex-wrap: wrap;
-    padding-top: 3rem;
+    padding-top: 4rem;
 }
 
 .pricing .card {
     background-color: #fff;
     color: hsl(233, 13%, 49%);
-    color: #7a838b;    
+    color: #7a838b;
 }
 
 .pricing .cards .card.active {
@@ -435,7 +446,7 @@ main button {
     margin: 2.6rem;
     display: flex;
     flex-direction: column;
-    align-items: center;    
+    align-items: center;
 }
 
 .pricing ul li {
@@ -444,10 +455,16 @@ main button {
     width: 100%;
     display: flex;
     justify-content: center;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.pricing ul li.pack {
+    font-size: 1.5rem;
 }
 
 .pricing ul li.price {
-    font-size: 4rem;    
+    font-size: 4.5rem;
     padding-bottom: 2rem;
     font-weight: 700;
 }
@@ -459,18 +476,18 @@ main button {
 .pricing .btn {
     background-color: #023a68;
     margin-top: 1rem;
-    height: 2.6rem;    
+    height: 2.6rem;
     width: 13.3rem;
     border: 0;
     font-weight: 700;
-    color: #fff;   
+    color: #fff;
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
 }
 
 .pricing .btn:hover {
-   background-color: #00294B;
+    background-color: #00294B;
 }
 
 .pricing .btn:active {
@@ -478,26 +495,24 @@ main button {
 }
 
 .pricing .active-btn {
-    background:  #fff;    
+    background: #fff;
     color: #023a68;
 }
 
 .pricing .btn.active-btn:hover {
     background: linear-gradient(135deg,
-    rgb(240, 241, 248) 0%,
-    rgb(240, 241, 248) 0%);
+            rgb(240, 241, 248) 0%,
+            rgb(240, 241, 248) 0%);
 }
 
 .pricing .active-btn:active {
-    background: hsl(237, 63%, 84%);    
+    background: hsl(237, 63%, 84%);
     transform: translateY(1px);
 }
 
 .pricing .bottom-bar {
     border-bottom: 2px solid hsl(240, 8%, 85%, 0.583);
 }
-
-
 
 .why {
     display: flex;
@@ -521,10 +536,10 @@ main button {
     justify-content: start;
     align-items: center;
     gap: .5rem;
-    text-align: center;    
-    background-color: #00294B;    
+    text-align: center;
+    background-color: #00294B;
     color: white;
-    padding: 1.25rem;    
+    padding: 1.25rem;
     /* transition: background-color 0.3s ease;  Transiciones suaves para los efectos     */
 }
 
@@ -534,8 +549,8 @@ main button {
 }
 
 .why-card i {
-    font-size: 2em;    
-    margin: 1rem;    
+    font-size: 2em;
+    margin: 1rem;
 }
 
 .why-card h6 {
@@ -548,12 +563,92 @@ main button {
 
 }
 
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;      
+    padding: 8vw 0 8vw 0;
+    /* background-color: #f7f7f7; */
+}
 
+.formulario h5 {
+    padding-bottom: 2rem;
 
+}
 
+.grid-form {
+    display: grid;
+    grid-column-gap: 90px; /* Espacio entre las columnas */
+    grid-row-gap: 2rem;    /* Espacio entre las filas */
+    grid-template-areas:
+        "nombre mail"
+        "telefono asunto"
+        "mensaje mensaje"
+        "button button";  /* Cambio para el botón */
+        justify-items: center;
+}
 
+.button-container {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center;     /* Centrar verticalmente */
+    grid-area: button;      /* Nuevo nombre para el área */
+}
 
+input {
+    height: 63px;
+    width: 100%;   /* 100% para que tome todo el espacio de la celda */
+    border: none;
+    background-color: #edf3f6;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 0;
+    outline: none;
+    font-size: 14px;
+    color: var(--conult-gray);
+    font-weight: 500;
+}
 
+textarea {
+    grid-area: mensaje;
+    font-size: 14px;
+    color: var(--conult-gray);
+    height: 180px;
+    width: 100%;   /* 100% para que tome todo el espacio de la celda */
+    background-color: #edf3f6;
+    padding: 18px 30px 30px;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    font-weight: 500;
+}
+
+button {
+    margin-top: 20px; /* Espacio entre el botón y el textarea */
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-content {
+    display: flex;
+    background-color: #001628;
+    width: 100%;
+}
+
+.mail, .telefono, .direccion {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Centra los elementos hijos verticalmente */
+}
+
+.fas, .fab {
+    font-size: 1.5rem; /* ajusta según lo que necesites */
+    margin-right: 10px; /* añade un margen para separar el ícono del texto */
+}
 
 
 

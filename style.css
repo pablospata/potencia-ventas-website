@@ -568,8 +568,8 @@ main button {
     flex-direction: column;
     justify-content: center;
     align-items: center;      
-    padding: 8vw 0 8vw 0;
-    /* background-color: #f7f7f7; */
+    padding: 2vw 0 8vw 0;
+    /* background-color: #f7f7f7; */    
 }
 
 .formulario h5 {
@@ -605,9 +605,9 @@ input {
     padding-right: 30px;
     border-radius: 0;
     outline: none;
-    font-size: 14px;
-    color: var(--conult-gray);
+    font-size: 14px;    
     font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 textarea {
@@ -622,6 +622,7 @@ textarea {
     border-radius: 0;
     outline: none;
     font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 button {

@@ -403,7 +403,7 @@ main button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 8vw 0 8vw 0;    
+    padding: 8vw 0 8vw 0;
 }
 
 
@@ -567,9 +567,9 @@ main button {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;      
+    align-items: center;
     padding: 8vw 0 8vw 0;
-    /* background-color: #f7f7f7; */    
+    /* background-color: #f7f7f7; */
 }
 
 .formulario h5 {
@@ -579,33 +579,40 @@ main button {
 
 .grid-form {
     display: grid;
-    grid-column-gap: 90px; /* Espacio entre las columnas */
-    grid-row-gap: 2rem;    /* Espacio entre las filas */
+    grid-column-gap: 90px;
+    /* Espacio entre las columnas */
+    grid-row-gap: 2rem;
+    /* Espacio entre las filas */
     grid-template-areas:
         "nombre mail"
         "telefono asunto"
         "mensaje mensaje"
-        "button button";  /* Cambio para el botón */
-        justify-items: center;
+        "button button";
+    /* Cambio para el botón */
+    justify-items: center;
 }
 
 .button-container {
     display: flex;
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: center;     /* Centrar verticalmente */
-    grid-area: button;      /* Nuevo nombre para el área */
+    justify-content: center;
+    /* Centrar horizontalmente */
+    align-items: center;
+    /* Centrar verticalmente */
+    grid-area: button;
+    /* Nuevo nombre para el área */
 }
 
 input {
     height: 63px;
-    width: 100%;   /* 100% para que tome todo el espacio de la celda */
+    width: 100%;
+    /* 100% para que tome todo el espacio de la celda */
     border: none;
     background-color: #edf3f6;
     padding-left: 30px;
     padding-right: 30px;
     border-radius: 0;
     outline: none;
-    font-size: 14px;    
+    font-size: 14px;
     font-weight: 500;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -615,7 +622,8 @@ textarea {
     font-size: 14px;
     color: var(--conult-gray);
     height: 180px;
-    width: 100%;   /* 100% para que tome todo el espacio de la celda */
+    width: 100%;
+    /* 100% para que tome todo el espacio de la celda */
     background-color: #edf3f6;
     padding: 18px 30px 30px;
     border: none;
@@ -626,7 +634,8 @@ textarea {
 }
 
 button {
-    margin-top: 20px; /* Espacio entre el botón y el textarea */
+    margin-top: 20px;
+    /* Espacio entre el botón y el textarea */
 }
 
 footer {
@@ -639,8 +648,8 @@ footer {
 }
 
 .footer-content {
-        display: flex;
-        justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .footer-wrapper {
@@ -648,44 +657,58 @@ footer {
     border-bottom: 1px solid #6a6b6c;
     padding: 2vw;
     margin: 0 10vw;
-    width: 90%; 
+    width: 90%;
 }
 
 .footer-bottom {
     padding: 1vw;
 }
 
-.mail, .telefono, .direccion, .telefono a, .direccion a,
+.mail,
+.telefono,
+.direccion,
+.telefono a,
+.direccion a,
 .footer-bottom {
     flex: 1;
-    display: flex;    
+    display: flex;
     justify-content: center;
 }
 
-.fas, .fab {
-    font-size: 1.5rem; /* ajusta según lo que necesites */
-    margin-right: 10px; /* añade un margen para separar el ícono del texto */
+.fas,
+.fab {
+    font-size: 1.5rem;
+    /* ajusta según lo que necesites */
+    margin-right: 10px;
+    /* añade un margen para separar el ícono del texto */
 }
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 815px) {
+
     .menu {
         z-index: 100;
         display: none;
         flex-direction: column;
         width: 100%;
-        position: absolute;
+        position: fixed;
         top: 60px;
         right: 0;
         background-color: #00294B;
-        padding: 1rem;
+    }
+
+    nav {
+        padding: 0;
+    }
+
+    .hero {
+        padding-top: 60px;
     }
 
     .menu a {
         padding: 6px 10vw;
     }
-
 
     .logo img {
         max-width: 70px;
@@ -693,18 +716,25 @@ footer {
 
     .menu.active {
         display: flex;
+        z-index: 10110;
         align-items: center;
         gap: .5rem;
+        padding-bottom: 1rem;
     }
 
     .toggle-menu {
         display: block;
+        padding-right: 2rem;
+        margin-top: 0;
     }
 
     .navbar .cta {
         display: none;
     }
 
+    .hero .text-layer {
+        padding: 5rem 2rem;
+    }
 
     .hero .text-layer h1 {
         font-size: 3rem;
@@ -716,6 +746,77 @@ footer {
 
     .hero .text-layer p {
         font-size: 1.25rem;
+    }
+
+    .wrapper {
+        padding: 8vw 5vw;
+        gap: 5rem;
+    }
+
+    .blanca button {
+        width: 100%;
+    }
+
+    .blanca,
+    .azul {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2vw 5vw;
+    }
+
+    h2 {
+        font-size: 4rem;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    h5 {
+        font-size: 1.5rem;
+    }
+
+    .cta-azul {
+        padding: 20px;
+    }
+
+    .cta-azul--claro {
+        background-color: rgb(5, 117, 188);
+    }
+
+    .cta-azul p {
+        width: 93%;
+        padding: 10px;
+        border: 1px solid white;
+        color: white;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .pricing .cards {
+        justify-content: center;
+        padding-top: 2rem;
+    }
+
+    .why-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .formulario {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .grid-form {
+        grid-template-areas:
+        "nombre"
+        "mail"
+        "telefono"
+        "asunto"
+        "mensaje"
+        "button";
+        gap: 10px;
     }
 
 }

@@ -25,11 +25,11 @@
                 <img src="./assets/imgs/logo-potencia-ventas-blanco.png" alt="Logo">
             </a>
             <ul class="menu">
-                <li><a href="#link1">Inicio</a></li>
-                <li><a href="#link2">Sobre mí</a></li>
-                <li><a href="#link3">Servicios</a></li>
-                <li><a href="#link4">Precios</a></li>
-                <li><a href="#link5">Contacto</a></li>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#precios">Precios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
             <div class="cta">
                 <a href="https://wa.me/5492345438935" target="_blank">
@@ -60,7 +60,7 @@
         </div>
 
 
-        <section>
+        <section id="sobre-mi">
             <div class="wrapper">
                 <div class="blanca">
                     <div class="container-text">
@@ -108,7 +108,7 @@
             </div>
         </section>
 
-        <section class="why">
+        <section id="servicios" class="why">
             <h2>Por qué elegirnos</h2>
             <h5>Asesoramiento personalizado, resultados extraordinarios</h5>
             <div class="why-container">
@@ -152,7 +152,7 @@
         </section>
 
 
-        <section class="pricing">
+        <section id="precios" class="pricing">
             <h2>Nuestros Precios</h2>
             <h5>Escalables y adaptados a tus necesidades</h5>
             <div class="cards">
@@ -221,7 +221,7 @@
             </div>
         </section>
 
-        <section>
+        <section id="testimonios">
             <div class="testimonial-cards">
                 <h2>Testimonios</h2>
                 <h5>Testimonios de nuestros clientes</h5>
@@ -398,21 +398,20 @@
             </div>
         </section>
 
-        <section class="formulario">
+        <section id="contacto" class="formulario">
 
             <h2>Envíanos un Mensaje</h2>
             <h5>Cuéntanos sobre tu negocio y nos pondremos en contacto</h5>
 
-            <form action="ruta_del_archivo_para_enviar.php" class="grid-form">
-                <input type="text" placeholder="Tu Nombre" name="name">
-                <input type="email" placeholder="Correo Electrónico" name="email">
-                <input type="text" placeholder="Número de Teléfono" name="phone">
-                <input type="text" placeholder="Asunto" name="subject">
-                <textarea name="message" placeholder="Escribe un Mensaje"></textarea>
-                <div class="button-container">
-                    <button type="submit">Enviar Mensaje</button>
+            <form class="grid-form">
+                <input type="text" placeholder="Tu Nombre" name="name" id="name">
+                <input type="email" placeholder="Correo Electrónico" name="email" id="email">
+                <input type="text" placeholder="Número de Teléfono" name="phone" id="phone">
+                <input type="text" placeholder="Asunto" name="subject" id="subject">
+                <textarea name="message" placeholder="Escribe un Mensaje" id="message"></textarea>
+                <div class="button-container">                    
+                    <button type="button" onclick="sendWhatsAppMessage()">Enviar por WhatsApp</button>
                 </div>
-
             </form>
         </section>
 
@@ -422,21 +421,23 @@
 
     <footer class="footer">
         <div class="footer-content">
-            <div class="mail">
-                <i class="fas fa-envelope"></i>
-                <p>info@potenciaventas.com</p>
-            </div>
-            <div class="telefono">
-                <a href="https://wa.me/5492345438935" target="_blank" class="whatsapp-link">
-                    <i class="fab fa-whatsapp"></i>
-                    <p>+54 9 2345 438935</p>
-                </a>
-            </div>
-            <div class="direccion">
-                <a href="https://wa.me/5492345438935" target="_blank" class="whatsapp-link">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <p>Oficinas en Argentina</p>
-                </a>
+            <div class="footer-wrapper">
+                <div class="mail">
+                    <i class="fas fa-envelope"></i>
+                    <p>info@potenciaventas.com</p>
+                </div>
+                <div class="telefono">
+                    <a href="https://wa.me/5492345438935" target="_blank" class="whatsapp-link">
+                        <i class="fab fa-whatsapp"></i>
+                        <p>+54 9 2345 438935</p>
+                    </a>
+                </div>
+                <div class="direccion">
+                    <a href="https://wa.me/5492345438935" target="_blank" class="whatsapp-link">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Oficinas en Argentina</p>
+                    </a>
+                </div>
             </div>
         </div>
 

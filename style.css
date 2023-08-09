@@ -568,7 +568,7 @@ main button {
     flex-direction: column;
     justify-content: center;
     align-items: center;      
-    padding: 2vw 0 8vw 0;
+    padding: 8vw 0 8vw 0;
     /* background-color: #f7f7f7; */    
 }
 
@@ -634,22 +634,32 @@ footer {
     flex-direction: column;
     background-color: #001628;
     color: white;
+    padding: 1vw;
+    gap: 1vw;
 }
 
 .footer-content {
-    display: flex;
-    /* flex-direction: column; */
-    
-    
+        display: flex;
+        justify-content: center;
 }
 
-.mail, .telefono, .direccion {
-    flex: 1;
-    display: block;
-    flex-direction: row;
-    align-items: center; /* Centra los elementos hijos verticalmente */
-        
+.footer-wrapper {
+    display: flex;
+    border-bottom: 1px solid #6a6b6c;
+    padding: 2vw;
+    margin: 0 10vw;
+    width: 90%; 
+}
 
+.footer-bottom {
+    padding: 1vw;
+}
+
+.mail, .telefono, .direccion, .telefono a, .direccion a,
+.footer-bottom {
+    flex: 1;
+    display: flex;    
+    justify-content: center;
 }
 
 .fas, .fab {
